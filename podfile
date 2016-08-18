@@ -1,0 +1,28 @@
+source 'https://github.com/CocoaPods/Specs'
+
+platform :ios, '8.0'
+
+use_frameworks!
+
+# ignore all warnings from all pods
+inhibit_all_warnings!
+
+# Main target pods
+ 
+def main_pods
+    pod 'STTwitter'
+end
+
+# Test target pods
+ 
+def test_pods
+    pod 'Kiwi', '~> 2.3'
+end
+
+target 'TwitterStreamAndRESTAPITests' do
+    main_pods
+end
+
+target 'TwitterStreamAndRESTAPI' do
+    test_pods
+end
