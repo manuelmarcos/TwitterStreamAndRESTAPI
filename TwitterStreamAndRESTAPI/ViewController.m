@@ -10,6 +10,8 @@
 #import "Constants.h"
 #import "DataManager.h"
 
+static NSString *kTweetCellReuseIdentifier = @"kTweetCellReuseIdentifier";
+
 @interface ViewController ()
 
 @property (nonatomic, strong) NSArray *tweetsArray;
@@ -23,6 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTweets:) name:kNotificationUpdateTweets object:nil];
+    [self.refreshControl addTarget:self action:@selector(loadTweets) forControlEvents:UIControlEventValueChanged];
     [self loadTweets];
 }
 
@@ -39,9 +42,24 @@
 }
 
 - (void)updateTweets:(NSNotification *)notification {
+    if (self.refreshControl.isRefreshing) {
+        [self.refreshControl endRefreshing];
+    }
     NSArray *newTweetsArray = notification.object;
     self.tweetsArray = newTweetsArray;
-   // TODO: reload table view
+    [self.tableView reloadData];
+}
+
+#pragma mark - UITableViewDataSource/Delegate
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.tweetsArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kTweetCellReuseIdentifier];
+    cell.textLabel.text = self.tweetsArray[indexPath.row];
+    return cell;
 }
 
 @end
