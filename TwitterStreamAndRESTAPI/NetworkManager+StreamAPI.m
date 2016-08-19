@@ -15,9 +15,11 @@
 
 - (void)startStreamingTweetsForKeyword:(NSString *)keyword {
     NSLog(@"startStreamingTweetsForKeyword:");
+    __weak __typeof(self) weakSelf = self;
     [self isNetworkAvailable:^(NSError *error) {
         if (error == nil) {
-            self.streamRequest = [self.twitterClient postStatusesFilterUserIDs:nil keywordsToTrack:@[keyword] locationBoundingBoxes:nil stallWarnings:[NSNumber numberWithInt:0] progressBlock:^(NSDictionary *json, STTwitterStreamJSONType type) {
+            __typeof(self) strongSelf = weakSelf;
+            strongSelf.streamRequest = [strongSelf.twitterClient postStatusesFilterUserIDs:nil keywordsToTrack:@[keyword] locationBoundingBoxes:nil stallWarnings:[NSNumber numberWithInt:0] progressBlock:^(NSDictionary *json, STTwitterStreamJSONType type) {
                 NSLog(@"progressBlock:");
                 // TODO: handle tweets
             } errorBlock:^(NSError *error) {
