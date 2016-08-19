@@ -38,6 +38,7 @@ static NSString *kTweetCellReuseIdentifier = @"kTweetCellReuseIdentifier";
 
 - (void)loadTweets {
     [self.refreshControl beginRefreshing];
+    // TODO: Populate the keyword from a search bar
     [[DataManager sharedDataManager] loadTweetsForKeyword:@"Spain" success:nil failure:nil];
 }
 
