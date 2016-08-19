@@ -28,6 +28,7 @@
 		9FD748EE1D671A9000B664DE /* DataManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD748ED1D671A9000B664DE /* DataManagerTests.m */; };
 		9FD748F31D671F3100B664DE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9FD748F21D671F3100B664DE /* Localizable.strings */; };
 		9FD748F61D671F9300B664DE /* UIViewController+ErrorAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD748F51D671F9300B664DE /* UIViewController+ErrorAlert.m */; };
+		9FD748F91D6721D800B664DE /* NSMutableArray+TweetsArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD748F81D6721D800B664DE /* NSMutableArray+TweetsArray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		9FD748F21D671F3100B664DE /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9FD748F41D671F9300B664DE /* UIViewController+ErrorAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ErrorAlert.h"; sourceTree = "<group>"; };
 		9FD748F51D671F9300B664DE /* UIViewController+ErrorAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ErrorAlert.m"; sourceTree = "<group>"; };
+		9FD748F71D6721D800B664DE /* NSMutableArray+TweetsArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+TweetsArray.h"; sourceTree = "<group>"; };
+		9FD748F81D6721D800B664DE /* NSMutableArray+TweetsArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+TweetsArray.m"; sourceTree = "<group>"; };
 		B4501DF6DF3C481E5BAE19A4 /* Pods-TwitterStreamAndRESTAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterStreamAndRESTAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterStreamAndRESTAPI/Pods-TwitterStreamAndRESTAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		DB9610C40C4AB6F4EC6B1DE2 /* Pods-TwitterStreamAndRESTAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterStreamAndRESTAPITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterStreamAndRESTAPITests/Pods-TwitterStreamAndRESTAPITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -231,6 +234,8 @@
 			children = (
 				9FD748F41D671F9300B664DE /* UIViewController+ErrorAlert.h */,
 				9FD748F51D671F9300B664DE /* UIViewController+ErrorAlert.m */,
+				9FD748F71D6721D800B664DE /* NSMutableArray+TweetsArray.h */,
+				9FD748F81D6721D800B664DE /* NSMutableArray+TweetsArray.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -542,6 +547,7 @@
 				9FD748DD1D66FD6D00B664DE /* NetworkManager+StreamAPI.m in Sources */,
 				9FD748E01D66FE3600B664DE /* NetworkManager+RESTAPI.m in Sources */,
 				9FD748F61D671F9300B664DE /* UIViewController+ErrorAlert.m in Sources */,
+				9FD748F91D6721D800B664DE /* NSMutableArray+TweetsArray.m in Sources */,
 				9F73CF471D6646B300535519 /* AppDelegate.m in Sources */,
 				9FD748CF1D66FA7400B664DE /* Utils.m in Sources */,
 				9FD748D51D66FAE900B664DE /* Reachability.m in Sources */,

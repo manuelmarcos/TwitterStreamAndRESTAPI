@@ -12,6 +12,7 @@
 #import "NetworkManager+StreamAPI.h"
 #import "Constants.h"
 #import "Utils.h"
+#import "NSMutableArray+TweetsArray.h"
 
 @interface DataManager ()
 
@@ -47,6 +48,7 @@
 
 - (void)startStreamingTweetsForKeyword:(NSString *)keyword {
     NSLog(@"startStreamingTweetsForKeyword");
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNewTweet:) name:kNotificationStreamTweet object:nil];
     [[NetworkManager sharedNetworkManager] startStreamingTweetsForKeyword:keyword];
 }
 
@@ -61,6 +63,15 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationUpdateTweets object:self.tweetsArray];
     });
+}
+
+#pragma mark - Helpers
+
+- (void)handleNewTweet:(NSNotification *)notification {
+    NSLog(@"handleNewTweet:");
+    NSDictionary *newTweet = notification.object;
+    [self.tweetsArray insertNewTweet:newTweet[kDictionaryKeyTweetJSON]];
+    [self notifyUpdateTweets];
 }
 
 #pragma mark - Share Manager

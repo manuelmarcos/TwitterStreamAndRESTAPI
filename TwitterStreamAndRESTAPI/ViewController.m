@@ -12,6 +12,8 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) NSArray *tweetsArray;
+
 @end
 
 @implementation ViewController
@@ -24,6 +26,11 @@
     [self loadTweets];
 }
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    self.tweetsArray = nil;
+}
+
 #pragma mark - Update UI methods
 
 - (void)loadTweets {
@@ -32,6 +39,8 @@
 }
 
 - (void)updateTweets:(NSNotification *)notification {
+    NSArray *newTweetsArray = notification.object;
+    self.tweetsArray = newTweetsArray;
    // TODO: reload table view
 }
 

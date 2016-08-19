@@ -27,3 +27,4 @@ static NSString *const kDictionaryKeyTweetJSON = @"text";
 
 // Notifications
 static NSString *const kNotificationUpdateTweets = @"uk.co.twitterStreamAndRESTAPI.notificationUpdateTweets";
+static NSString *const kNotificationStreamTweet = @"uk.co.twitterStreamAndRESTAPI.notificationStreamTweet";
