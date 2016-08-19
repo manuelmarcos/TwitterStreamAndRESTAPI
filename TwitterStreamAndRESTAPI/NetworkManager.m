@@ -73,7 +73,7 @@
             completionBlock(error);
         }];
     } else {
-        NSError *error = [NSError errorWithDomain:kNetworkErrorDomain code:-1004 userInfo:[NSDictionary dictionaryWithObject:NSLocalizedString(@"Error Localized Description host not reachable", @"Host not reachable") forKey:NSLocalizedDescriptionKey]];
+        NSError *error = [NSError errorWithDomain:kNetworkErrorDomain code:kStatusCodeErrorDomain userInfo:[NSDictionary dictionaryWithObject:NSLocalizedString(@"Error Localized Description host not reachable", @"Host not reachable") forKey:NSLocalizedDescriptionKey]];
         completionBlock(error);
     }
 }

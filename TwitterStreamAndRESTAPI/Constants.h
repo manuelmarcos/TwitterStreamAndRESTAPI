@@ -8,6 +8,7 @@
 
 // Error domain
 static NSString *const kNetworkErrorDomain = @"uk.co.twitterStreamAndRESTAPI.networkError";
+static const NSInteger kStatusCodeErrorDomain = -1004;
 
 // Host
 static NSString *const kTwitterAPIHostEndPoint = @"api.twitter.com";
