@@ -38,7 +38,10 @@
         }
     } failure:^(NSError *error) {
         NSLog(@"getSearchTweetsForKeywordFailure");
-        // TODO: display error
+        [[Utils getTopmostViewController] presentErrorAlert:error.localizedDescription];
+        if (failure != nil) {
+            failure();
+        }
     }];
 }
 
