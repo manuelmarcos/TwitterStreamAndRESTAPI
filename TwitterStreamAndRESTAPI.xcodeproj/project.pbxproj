@@ -21,6 +21,7 @@
 		9FD748CF1D66FA7400B664DE /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD748CE1D66FA7400B664DE /* Utils.m */; };
 		9FD748D51D66FAE900B664DE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD748D31D66FAE900B664DE /* Reachability.m */; };
 		9FD748DA1D66FC0100B664DE /* NetworkManager+ForSubclassEyesOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD748D91D66FC0100B664DE /* NetworkManager+ForSubclassEyesOnly.m */; };
+		9FD748DD1D66FD6D00B664DE /* NetworkManager+StreamAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD748DC1D66FD6D00B664DE /* NetworkManager+StreamAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		9FD748D71D66FB4E00B664DE /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		9FD748D81D66FC0100B664DE /* NetworkManager+ForSubclassEyesOnly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetworkManager+ForSubclassEyesOnly.h"; sourceTree = "<group>"; };
 		9FD748D91D66FC0100B664DE /* NetworkManager+ForSubclassEyesOnly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetworkManager+ForSubclassEyesOnly.m"; sourceTree = "<group>"; };
+		9FD748DB1D66FD6D00B664DE /* NetworkManager+StreamAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetworkManager+StreamAPI.h"; sourceTree = "<group>"; };
+		9FD748DC1D66FD6D00B664DE /* NetworkManager+StreamAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetworkManager+StreamAPI.m"; sourceTree = "<group>"; };
 		B4501DF6DF3C481E5BAE19A4 /* Pods-TwitterStreamAndRESTAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterStreamAndRESTAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterStreamAndRESTAPI/Pods-TwitterStreamAndRESTAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		DB9610C40C4AB6F4EC6B1DE2 /* Pods-TwitterStreamAndRESTAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterStreamAndRESTAPITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterStreamAndRESTAPITests/Pods-TwitterStreamAndRESTAPITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -245,6 +248,8 @@
 			children = (
 				9FD748D81D66FC0100B664DE /* NetworkManager+ForSubclassEyesOnly.h */,
 				9FD748D91D66FC0100B664DE /* NetworkManager+ForSubclassEyesOnly.m */,
+				9FD748DB1D66FD6D00B664DE /* NetworkManager+StreamAPI.h */,
+				9FD748DC1D66FD6D00B664DE /* NetworkManager+StreamAPI.m */,
 			);
 			name = "Network Categories";
 			sourceTree = "<group>";
@@ -490,6 +495,7 @@
 				9FD748DA1D66FC0100B664DE /* NetworkManager+ForSubclassEyesOnly.m in Sources */,
 				9FD748CC1D66FA5700B664DE /* NetworkManager.m in Sources */,
 				9F73CF4A1D6646B300535519 /* ViewController.m in Sources */,
+				9FD748DD1D66FD6D00B664DE /* NetworkManager+StreamAPI.m in Sources */,
 				9F73CF471D6646B300535519 /* AppDelegate.m in Sources */,
 				9FD748CF1D66FA7400B664DE /* Utils.m in Sources */,
 				9FD748D51D66FAE900B664DE /* Reachability.m in Sources */,
