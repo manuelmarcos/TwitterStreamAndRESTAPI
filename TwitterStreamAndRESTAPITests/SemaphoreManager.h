@@ -6,71 +6,20 @@
 //  Copyright © 2016 Manuel Marcos Regalado. All rights reserved.
 //
 
-#import "SemaphoreManager.h"
+@import Foundation;
 
-@interface SemaphoreManager ()
+/// Used in our TestSuite to run tests on asynchronous calls
 
-@property (nonatomic, strong) NSMutableDictionary *flags;
+@interface SemaphoreManager : NSObject
 
-@end
+/// The shared instance
++ (SemaphoreManager *)sharedManager;
 
-@implementation SemaphoreManager
-
-#pragma mark - Creation / Destruction Methods
-
-- (instancetype)init
-{
-    self = [super init];
-    if (self)
-    {
-        _flags = [NSMutableDictionary new];
-    }
-    return self;
-}
-
-- (void)dealloc
-{
-    _flags = nil;
-}
-
-#pragma mark - Public Methods
-
-- (BOOL)isLifted:(NSString *)key
-{
-    return (_flags[key] != nil);
-}
-
-- (void)lift:(NSString *)key
-{
-    _flags[key] = @"YES";
-}
-
-- (void)waitForKey:(NSString *)key
-{
-    // Clear the key if its already been set
-    if (_flags[key])
-    {
-        [_flags removeObjectForKey:key];
-    }
-    
-    // Run until the key has been lifted
-    BOOL run = YES;
-    while (run && [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode beforeDate:[NSDate dateWithTimeIntervalSinceNow:1.0f]])
-    {
-        run = !([self isLifted:key]);
-    }
-}
-
-#pragma mark - Static Methods
-
-+ (SemaphoreManager *)sharedManager
-{
-    static SemaphoreManager *instance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        instance = [self new];
-    });
-    return instance;
-}
+/// Checks if a key has been lifted
+- (BOOL)isLifted:(NSString *)key;
+/// Lifts a specific key
+- (void)lift:(NSString *)key;
+/// Sets a key that is waiting to be lifted
+- (void)waitForKey:(NSString *)key;
 
 @end
