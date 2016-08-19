@@ -7,6 +7,7 @@
 //
 
 #import "NetworkManager.h"
+#import "NetworkManager+ForSubclassEyesOnly.h"
 #import "Reachability.h"
 #import "Constants.h"
 #import "Utils.h"
@@ -25,7 +26,13 @@
     self = [super init];
     if (self) {
         _online = NO;
-                
+        
+        // Init the twitter client and execute the OAuth
+        self.twitterClient = [STTwitterAPI twitterAPIWithOAuthConsumerKey:kTwitterOAuthConsumerKey
+                                                           consumerSecret:kTwitterOAuthConsumeSecret
+                                                               oauthToken:kTwitterOAuthToken
+                                                         oauthTokenSecret:kTwitterOAuthTokenSecret];
+        
         // Init reachability for the first time and start monitoring
         self.hostReachability = [Reachability reachabilityWithHostName:kTwitterAPIHostEndPoint];
         [self updateReachability:self.hostReachability.currentReachabilityStatus];

@@ -10,4 +10,16 @@
 
 @interface NetworkManager (StreamAPI)
 
+/**
+ *  Starts a streaming of tweets for a given keyword. This will be streaming tweets as they happen right now, live.
+ *
+ *  @param keyword The given keyword
+ */
+- (void)startStreamingTweetsForKeyword:(NSString *)keyword;
+
+/**
+ *  Stops the streaming of tweets.
+ */
+- (void)stopStreaming;
+
 @end
