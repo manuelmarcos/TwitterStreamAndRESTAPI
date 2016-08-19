@@ -23,10 +23,10 @@
                 NSLog(@"progressBlock:");
                 // TODO: handle tweets
             } errorBlock:^(NSError *error) {
-                // TODO: Error
+                [[Utils getTopmostViewController] presentErrorAlert:error.localizedDescription];
             }];
         } else {
-            // TODO: Error
+            [[Utils getTopmostViewController] presentErrorAlert:error.localizedDescription];
         }
     }];
 }
