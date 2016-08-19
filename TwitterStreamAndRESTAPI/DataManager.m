@@ -32,7 +32,7 @@
         [strongSelf startStreamingTweetsForKeyword:keyword];
         NSArray *textTweetArray = [tweetsArray valueForKey:kDictionaryKeyTweetJSON];
         strongSelf.tweetsArray = [textTweetArray mutableCopy];
-        // TODO: Notify updates
+        [strongSelf notifyUpdateTweets];
         if (success != nil) {
             success();
         }
@@ -52,6 +52,15 @@
 
 - (void)cancelAllTasks {
     [[NetworkManager sharedNetworkManager] stopStreaming];
+}
+
+#pragma mark - Notifications
+
+- (void)notifyUpdateTweets {
+    NSLog(@"notifyUpdateTweets");
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationUpdateTweets object:self.tweetsArray];
+    });
 }
 
 #pragma mark - Share Manager

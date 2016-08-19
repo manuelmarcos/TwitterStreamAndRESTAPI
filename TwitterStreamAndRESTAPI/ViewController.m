@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "Constants.h"
+#import "DataManager.h"
 
 @interface ViewController ()
 
@@ -14,14 +16,23 @@
 
 @implementation ViewController
 
+#pragma mark - Life cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTweets:) name:kNotificationUpdateTweets object:nil];
+    [self loadTweets];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Update UI methods
+
+- (void)loadTweets {
+    [self.refreshControl beginRefreshing];
+    [[DataManager sharedDataManager] loadTweetsForKeyword:@"Spain" success:nil failure:nil];
+}
+
+- (void)updateTweets:(NSNotification *)notification {
+   // TODO: reload table view
 }
 
 @end

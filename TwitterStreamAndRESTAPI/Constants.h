@@ -24,3 +24,6 @@ static const NSInteger kNumberOfTweets = 5;
 
 // JSON parse
 static NSString *const kDictionaryKeyTweetJSON = @"text";
+
+// Notifications
+static NSString *const kNotificationUpdateTweets = @"uk.co.twitterStreamAndRESTAPI.notificationUpdateTweets";
