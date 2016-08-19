@@ -175,8 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				9FD748E71D67168000B664DE /* NetworkManagerTests.m */,
-				9FD748E91D6716C900B664DE /* Tests Supporting Files */,
 				9FD748ED1D671A9000B664DE /* DataManagerTests.m */,
+				9FD748E91D6716C900B664DE /* Tests Supporting Files */,
 			);
 			path = TwitterStreamAndRESTAPITests;
 			sourceTree = "<group>";
