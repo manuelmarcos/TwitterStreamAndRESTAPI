@@ -20,7 +20,11 @@ static NSString *const kTwitterOAuthToken = @"251087026-97lKxwMr8KpV52S1G785N0aL
 static NSString *const kTwitterOAuthTokenSecret = @"dMgqvg8ggXVwURORwMDlEiJVaDnbtFusIG3ElyQNQj6eV";
 
 // Number of tweets.
-static const NSInteger kNumberOfTweets = 5;
+static const NSInteger kNumberOfTweets = 50;
 
 // JSON parse
 static NSString *const kDictionaryKeyTweetJSON = @"text";
+
+// Notifications
+static NSString *const kNotificationUpdateTweets = @"uk.co.twitterStreamAndRESTAPI.notificationUpdateTweets";
+static NSString *const kNotificationStreamTweet = @"uk.co.twitterStreamAndRESTAPI.notificationStreamTweet";

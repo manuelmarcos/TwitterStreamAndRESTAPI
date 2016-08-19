@@ -21,12 +21,12 @@
             __typeof(self) strongSelf = weakSelf;
             strongSelf.streamRequest = [strongSelf.twitterClient postStatusesFilterUserIDs:nil keywordsToTrack:@[keyword] locationBoundingBoxes:nil stallWarnings:[NSNumber numberWithInt:0] progressBlock:^(NSDictionary *json, STTwitterStreamJSONType type) {
                 NSLog(@"progressBlock:");
-                // TODO: handle tweets
+                [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationStreamTweet object:json];
             } errorBlock:^(NSError *error) {
-                // TODO: Error
+                [[Utils getTopmostViewController] presentErrorAlert:error.localizedDescription];
             }];
         } else {
-            // TODO: Error
+            [[Utils getTopmostViewController] presentErrorAlert:error.localizedDescription];
         }
     }];
 }

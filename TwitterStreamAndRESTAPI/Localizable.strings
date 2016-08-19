@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  TwitterStreamAndRESTAPI
+
+  Created by Manuel Marcos Regalado on 19/08/2016.
+  Copyright © 2016 Manuel Marcos Regalado. All rights reserved.
+*/
+
+/**
+ *  Error Localized Description
+ */
+"Error Localized Description host not reachable" = "Host is cannot be reached";
+
+/**
+ *  Error messages and titles
+ */
+"Title error" = "Error";
+"Ok" = "Ok";

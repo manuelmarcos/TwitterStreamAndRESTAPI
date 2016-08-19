@@ -8,6 +8,7 @@
 
 @import Foundation;
 @import UIKit;
+#import "UIViewController+ErrorAlert.h"
 
 typedef void (^CompletionErrorBlock)(NSError *error);
 

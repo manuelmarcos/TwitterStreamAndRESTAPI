@@ -12,6 +12,7 @@
 #import "NetworkManager+StreamAPI.h"
 #import "Constants.h"
 #import "Utils.h"
+#import "NSMutableArray+TweetsArray.h"
 
 @interface DataManager ()
 
@@ -32,23 +33,45 @@
         [strongSelf startStreamingTweetsForKeyword:keyword];
         NSArray *textTweetArray = [tweetsArray valueForKey:kDictionaryKeyTweetJSON];
         strongSelf.tweetsArray = [textTweetArray mutableCopy];
-        // TODO: Notify updates
+        [strongSelf notifyUpdateTweets];
         if (success != nil) {
             success();
         }
     } failure:^(NSError *error) {
         NSLog(@"getSearchTweetsForKeywordFailure");
-        // TODO: display error
+        [[Utils getTopmostViewController] presentErrorAlert:error.localizedDescription];
+        if (failure != nil) {
+            failure();
+        }
     }];
 }
 
 - (void)startStreamingTweetsForKeyword:(NSString *)keyword {
     NSLog(@"startStreamingTweetsForKeyword");
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleNewTweet:) name:kNotificationStreamTweet object:nil];
     [[NetworkManager sharedNetworkManager] startStreamingTweetsForKeyword:keyword];
 }
 
 - (void)cancelAllTasks {
     [[NetworkManager sharedNetworkManager] stopStreaming];
+}
+
+#pragma mark - Notifications
+
+- (void)notifyUpdateTweets {
+    NSLog(@"notifyUpdateTweets");
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [[NSNotificationCenter defaultCenter] postNotificationName:kNotificationUpdateTweets object:self.tweetsArray];
+    });
+}
+
+#pragma mark - Helpers
+
+- (void)handleNewTweet:(NSNotification *)notification {
+    NSLog(@"handleNewTweet:");
+    NSDictionary *newTweet = notification.object;
+    [self.tweetsArray insertNewTweet:newTweet[kDictionaryKeyTweetJSON]];
+    [self notifyUpdateTweets];
 }
 
 #pragma mark - Share Manager
