@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FA538409AE23061B987F11F /* libPods-TwitterStreamAndRESTAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15E943F6CAFD9D30A8EA6EB9 /* libPods-TwitterStreamAndRESTAPI.a */; };
+		9C530399281457577CF85382 /* libPods-TwitterStreamAndRESTAPITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1834D830FB71F8E1BE225235 /* libPods-TwitterStreamAndRESTAPITests.a */; };
 		9F73CF441D6646B300535519 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73CF431D6646B300535519 /* main.m */; };
 		9F73CF471D6646B300535519 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73CF461D6646B300535519 /* AppDelegate.m */; };
 		9F73CF4A1D6646B300535519 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73CF491D6646B300535519 /* ViewController.m */; };
@@ -15,6 +17,12 @@
 		9F73CF521D6646B300535519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F73CF501D6646B300535519 /* LaunchScreen.storyboard */; };
 		9F73CF5D1D6646B300535519 /* TwitterStreamAndRESTAPITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73CF5C1D6646B300535519 /* TwitterStreamAndRESTAPITests.m */; };
 		9F73CF681D6646B300535519 /* TwitterStreamAndRESTAPIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F73CF671D6646B300535519 /* TwitterStreamAndRESTAPIUITests.m */; };
+		9FD748CC1D66FA5700B664DE /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD748CB1D66FA5700B664DE /* NetworkManager.m */; };
+		9FD748CF1D66FA7400B664DE /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD748CE1D66FA7400B664DE /* Utils.m */; };
+		9FD748D51D66FAE900B664DE /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD748D31D66FAE900B664DE /* Reachability.m */; };
+		9FD748DA1D66FC0100B664DE /* NetworkManager+ForSubclassEyesOnly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD748D91D66FC0100B664DE /* NetworkManager+ForSubclassEyesOnly.m */; };
+		9FD748DD1D66FD6D00B664DE /* NetworkManager+StreamAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD748DC1D66FD6D00B664DE /* NetworkManager+StreamAPI.m */; };
+		9FD748E01D66FE3600B664DE /* NetworkManager+RESTAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD748DF1D66FE3600B664DE /* NetworkManager+RESTAPI.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02EA5E3B3A2D679AFD37AAA3 /* Pods-TwitterStreamAndRESTAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterStreamAndRESTAPITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterStreamAndRESTAPITests/Pods-TwitterStreamAndRESTAPITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1512B4256FCE83C4201529BE /* Pods-TwitterStreamAndRESTAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterStreamAndRESTAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterStreamAndRESTAPI/Pods-TwitterStreamAndRESTAPI.release.xcconfig"; sourceTree = "<group>"; };
+		15E943F6CAFD9D30A8EA6EB9 /* libPods-TwitterStreamAndRESTAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwitterStreamAndRESTAPI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1834D830FB71F8E1BE225235 /* libPods-TwitterStreamAndRESTAPITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwitterStreamAndRESTAPITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F73CF3F1D6646B300535519 /* TwitterStreamAndRESTAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterStreamAndRESTAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F73CF431D6646B300535519 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F73CF451D6646B300535519 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +63,21 @@
 		9F73CF631D6646B300535519 /* TwitterStreamAndRESTAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterStreamAndRESTAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F73CF671D6646B300535519 /* TwitterStreamAndRESTAPIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterStreamAndRESTAPIUITests.m; sourceTree = "<group>"; };
 		9F73CF691D6646B300535519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD748CA1D66FA5700B664DE /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkManager.h; sourceTree = "<group>"; };
+		9FD748CB1D66FA5700B664DE /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkManager.m; sourceTree = "<group>"; };
+		9FD748CD1D66FA7400B664DE /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		9FD748CE1D66FA7400B664DE /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		9FD748D31D66FAE900B664DE /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		9FD748D41D66FAE900B664DE /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		9FD748D71D66FB4E00B664DE /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		9FD748D81D66FC0100B664DE /* NetworkManager+ForSubclassEyesOnly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetworkManager+ForSubclassEyesOnly.h"; sourceTree = "<group>"; };
+		9FD748D91D66FC0100B664DE /* NetworkManager+ForSubclassEyesOnly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetworkManager+ForSubclassEyesOnly.m"; sourceTree = "<group>"; };
+		9FD748DB1D66FD6D00B664DE /* NetworkManager+StreamAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetworkManager+StreamAPI.h"; sourceTree = "<group>"; };
+		9FD748DC1D66FD6D00B664DE /* NetworkManager+StreamAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetworkManager+StreamAPI.m"; sourceTree = "<group>"; };
+		9FD748DE1D66FE3600B664DE /* NetworkManager+RESTAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NetworkManager+RESTAPI.h"; sourceTree = "<group>"; };
+		9FD748DF1D66FE3600B664DE /* NetworkManager+RESTAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NetworkManager+RESTAPI.m"; sourceTree = "<group>"; };
+		B4501DF6DF3C481E5BAE19A4 /* Pods-TwitterStreamAndRESTAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterStreamAndRESTAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterStreamAndRESTAPI/Pods-TwitterStreamAndRESTAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		DB9610C40C4AB6F4EC6B1DE2 /* Pods-TwitterStreamAndRESTAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterStreamAndRESTAPITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitterStreamAndRESTAPITests/Pods-TwitterStreamAndRESTAPITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FA538409AE23061B987F11F /* libPods-TwitterStreamAndRESTAPI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C530399281457577CF85382 /* libPods-TwitterStreamAndRESTAPITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +107,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90D55261A8652E3003095260 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4501DF6DF3C481E5BAE19A4 /* Pods-TwitterStreamAndRESTAPI.debug.xcconfig */,
+				1512B4256FCE83C4201529BE /* Pods-TwitterStreamAndRESTAPI.release.xcconfig */,
+				02EA5E3B3A2D679AFD37AAA3 /* Pods-TwitterStreamAndRESTAPITests.debug.xcconfig */,
+				DB9610C40C4AB6F4EC6B1DE2 /* Pods-TwitterStreamAndRESTAPITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9F73CF361D6646B300535519 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +125,8 @@
 				9F73CF5B1D6646B300535519 /* TwitterStreamAndRESTAPITests */,
 				9F73CF661D6646B300535519 /* TwitterStreamAndRESTAPIUITests */,
 				9F73CF401D6646B300535519 /* Products */,
+				90D55261A8652E3003095260 /* Pods */,
+				A9276BB558EF81F42228CDA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +143,12 @@
 		9F73CF411D6646B300535519 /* TwitterStreamAndRESTAPI */ = {
 			isa = PBXGroup;
 			children = (
-				9F73CF451D6646B300535519 /* AppDelegate.h */,
-				9F73CF461D6646B300535519 /* AppDelegate.m */,
-				9F73CF481D6646B300535519 /* ViewController.h */,
-				9F73CF491D6646B300535519 /* ViewController.m */,
-				9F73CF4B1D6646B300535519 /* Main.storyboard */,
-				9F73CF4E1D6646B300535519 /* Assets.xcassets */,
-				9F73CF501D6646B300535519 /* LaunchScreen.storyboard */,
-				9F73CF531D6646B300535519 /* Info.plist */,
+				9F73CF7A1D6666FD00535519 /* App Delegate */,
+				9F73CF791D6666F600535519 /* Assets */,
+				9F73CF781D6666EB00535519 /* Categories */,
+				9F73CF771D6666E400535519 /* Managers */,
+				9F73CF761D6666DB00535519 /* Utilities */,
+				9F73CF751D6666D200535519 /* Views */,
 				9F73CF421D6646B300535519 /* Supporting Files */,
 			);
 			path = TwitterStreamAndRESTAPI;
@@ -117,6 +157,7 @@
 		9F73CF421D6646B300535519 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9F73CF531D6646B300535519 /* Info.plist */,
 				9F73CF431D6646B300535519 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +181,93 @@
 			path = TwitterStreamAndRESTAPIUITests;
 			sourceTree = "<group>";
 		};
+		9F73CF751D6666D200535519 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F73CF481D6646B300535519 /* ViewController.h */,
+				9F73CF491D6646B300535519 /* ViewController.m */,
+				9F73CF4B1D6646B300535519 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9F73CF761D6666DB00535519 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9FD748D71D66FB4E00B664DE /* Constants.h */,
+				9FD748CD1D66FA7400B664DE /* Utils.h */,
+				9FD748CE1D66FA7400B664DE /* Utils.m */,
+				9FD748D41D66FAE900B664DE /* Reachability.h */,
+				9FD748D31D66FAE900B664DE /* Reachability.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		9F73CF771D6666E400535519 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9FD748C81D66F9FF00B664DE /* Network Manager */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		9F73CF781D6666EB00535519 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		9F73CF791D6666F600535519 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9F73CF4E1D6646B300535519 /* Assets.xcassets */,
+				9F73CF501D6646B300535519 /* LaunchScreen.storyboard */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		9F73CF7A1D6666FD00535519 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				9F73CF451D6646B300535519 /* AppDelegate.h */,
+				9F73CF461D6646B300535519 /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		9FD748C81D66F9FF00B664DE /* Network Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9FD748CA1D66FA5700B664DE /* NetworkManager.h */,
+				9FD748CB1D66FA5700B664DE /* NetworkManager.m */,
+				9FD748C91D66FA0800B664DE /* Network Categories */,
+			);
+			name = "Network Manager";
+			sourceTree = "<group>";
+		};
+		9FD748C91D66FA0800B664DE /* Network Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9FD748D81D66FC0100B664DE /* NetworkManager+ForSubclassEyesOnly.h */,
+				9FD748D91D66FC0100B664DE /* NetworkManager+ForSubclassEyesOnly.m */,
+				9FD748DB1D66FD6D00B664DE /* NetworkManager+StreamAPI.h */,
+				9FD748DC1D66FD6D00B664DE /* NetworkManager+StreamAPI.m */,
+				9FD748DE1D66FE3600B664DE /* NetworkManager+RESTAPI.h */,
+				9FD748DF1D66FE3600B664DE /* NetworkManager+RESTAPI.m */,
+			);
+			name = "Network Categories";
+			sourceTree = "<group>";
+		};
+		A9276BB558EF81F42228CDA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15E943F6CAFD9D30A8EA6EB9 /* libPods-TwitterStreamAndRESTAPI.a */,
+				1834D830FB71F8E1BE225235 /* libPods-TwitterStreamAndRESTAPITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F73CF6C1D6646B300535519 /* Build configuration list for PBXNativeTarget "TwitterStreamAndRESTAPI" */;
 			buildPhases = (
+				5180BFA72F5522C972273890 /* [CP] Check Pods Manifest.lock */,
 				9F73CF3B1D6646B300535519 /* Sources */,
 				9F73CF3C1D6646B300535519 /* Frameworks */,
 				9F73CF3D1D6646B300535519 /* Resources */,
+				FA501E7B0F7DEFDCA6205201 /* [CP] Embed Pods Frameworks */,
+				C86731B9D172C36C9A14A416 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +295,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F73CF6F1D6646B300535519 /* Build configuration list for PBXNativeTarget "TwitterStreamAndRESTAPITests" */;
 			buildPhases = (
+				A2E6F75562EA79AB2F50D610 /* [CP] Check Pods Manifest.lock */,
 				9F73CF541D6646B300535519 /* Sources */,
 				9F73CF551D6646B300535519 /* Frameworks */,
 				9F73CF561D6646B300535519 /* Resources */,
+				ABB410FE2C668C6179A0A3D7 /* [CP] Embed Pods Frameworks */,
+				0994EA20EFF052CB38595E2C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,13 +399,112 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0994EA20EFF052CB38595E2C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitterStreamAndRESTAPITests/Pods-TwitterStreamAndRESTAPITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5180BFA72F5522C972273890 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A2E6F75562EA79AB2F50D610 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABB410FE2C668C6179A0A3D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitterStreamAndRESTAPITests/Pods-TwitterStreamAndRESTAPITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C86731B9D172C36C9A14A416 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitterStreamAndRESTAPI/Pods-TwitterStreamAndRESTAPI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA501E7B0F7DEFDCA6205201 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitterStreamAndRESTAPI/Pods-TwitterStreamAndRESTAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F73CF3B1D6646B300535519 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FD748DA1D66FC0100B664DE /* NetworkManager+ForSubclassEyesOnly.m in Sources */,
+				9FD748CC1D66FA5700B664DE /* NetworkManager.m in Sources */,
 				9F73CF4A1D6646B300535519 /* ViewController.m in Sources */,
+				9FD748DD1D66FD6D00B664DE /* NetworkManager+StreamAPI.m in Sources */,
+				9FD748E01D66FE3600B664DE /* NetworkManager+RESTAPI.m in Sources */,
 				9F73CF471D6646B300535519 /* AppDelegate.m in Sources */,
+				9FD748CF1D66FA7400B664DE /* Utils.m in Sources */,
+				9FD748D51D66FAE900B664DE /* Reachability.m in Sources */,
 				9F73CF441D6646B300535519 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +646,7 @@
 		};
 		9F73CF6D1D6646B300535519 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4501DF6DF3C481E5BAE19A4 /* Pods-TwitterStreamAndRESTAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TwitterStreamAndRESTAPI/Info.plist;
@@ -424,6 +658,7 @@
 		};
 		9F73CF6E1D6646B300535519 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1512B4256FCE83C4201529BE /* Pods-TwitterStreamAndRESTAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TwitterStreamAndRESTAPI/Info.plist;
@@ -435,6 +670,7 @@
 		};
 		9F73CF701D6646B300535519 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02EA5E3B3A2D679AFD37AAA3 /* Pods-TwitterStreamAndRESTAPITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TwitterStreamAndRESTAPITests/Info.plist;
@@ -447,6 +683,7 @@
 		};
 		9F73CF711D6646B300535519 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB9610C40C4AB6F4EC6B1DE2 /* Pods-TwitterStreamAndRESTAPITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = TwitterStreamAndRESTAPITests/Info.plist;
@@ -498,6 +735,7 @@
 				9F73CF6E1D6646B300535519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F73CF6F1D6646B300535519 /* Build configuration list for PBXNativeTarget "TwitterStreamAndRESTAPITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +744,7 @@
 				9F73CF711D6646B300535519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F73CF721D6646B300535519 /* Build configuration list for PBXNativeTarget "TwitterStreamAndRESTAPIUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +753,7 @@
 				9F73CF741D6646B300535519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
