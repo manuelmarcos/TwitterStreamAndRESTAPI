@@ -18,7 +18,7 @@ static NSString *const kTwitterOAuthConsumeSecret = @"PB4TvN25vITR4ViTLYlVNfUu2T
 static NSString *const kTwitterOAuthToken = @"251087026-Gg86cuBM3484PxKu3BoclnMdIjtrpfJbiVh5qNiT";
 static NSString *const kTwitterOAuthTokenSecret = @"N30ZDNKR8jnrq9byZbPdfRAZTGFqzSsFAdwpkc36sbCQv";
 
-// Number of tweets. Limited by Transferwise challenge instructions.
+// Number of tweets.
 static const NSInteger kNumberOfTweets = 5;
 
 // JSON parse
